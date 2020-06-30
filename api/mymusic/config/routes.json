@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mymusics",
+      "handler": "mymusic.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mymusics/count",
+      "handler": "mymusic.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mymusics/:id",
+      "handler": "mymusic.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mymusics",
+      "handler": "mymusic.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mymusics/:id",
+      "handler": "mymusic.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mymusics/:id",
+      "handler": "mymusic.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
