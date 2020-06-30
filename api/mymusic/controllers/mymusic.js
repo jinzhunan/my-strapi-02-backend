@@ -65,7 +65,7 @@ module.exports = {
                         eachsong = JSON.stringify(eachsong);
 
                         console.log(id)
-                        await axios.put(`http://localhost:1337/mymusics/${id}`,{eachsong}).then(
+                        await axios.put(`https://stark-harbor-44453.herokuapp.com/mymusics/${id}`,{eachsong}).then(
                             function(response){
                                 console.log(response.data.eachsong)
                          
